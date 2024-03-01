@@ -9,6 +9,9 @@ const PORT =8001;
 connectToMongoDB("mongodb+srv://amandeepp4408:Y7YWbeTSx6FQepzE@cluster0.nhwd1hv.mongodb.net/short-url?retryWrites=true&w=majority").then(() => console.log("mongodb connected")
 );
 
+// app.get("/test",(req,res)=>{
+// return res.end("<h1>hi</h1>");
+// });
 app.use(express.json())
 
 app.use("/url",urlRoute);
